@@ -1,0 +1,558 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, b {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+}
+
+#logo {
+    margin: 40px 0 0 100px;
+}
+
+#burger {
+    display: none;
+}
+
+nav {
+    float: right;
+    margin: 40px 100px;
+}
+
+.navbutt {
+    text-decoration: none;
+    color: black;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.navbutt:hover, .navbutt:nth-of-type(1) {
+    color: #10C9C3;
+}
+
+#banner {
+    height: 670px;
+    background: url("asets/mac.jpg") no-repeat;
+    background-size: cover;
+}
+
+#banncont {
+    width: 500px;
+    float: right;
+    margin: 200px 20% 0 0;
+}
+
+#banncont > a {
+    text-decoration: none;
+    color: white;
+    background: #10C9C3;
+    padding: 20px 40px;
+    line-height: 100px;
+}
+
+.container {
+    width: calc(100% - 200px);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+#about {
+    width: 50%;
+    padding: 100px;
+    margin: auto;
+    text-align: center;
+}
+
+#about>img {
+    margin-top: 20px;
+}
+
+#skills {
+    background: #F8FAF9;
+    width: 100%;
+}
+
+#skillscont {
+    width: calc(50% - 200px);
+    padding: 100px;
+    float: left;
+}
+
+#skillscont > h2 {
+    margin-bottom: 50px;
+}
+
+.perc {
+    margin-left: 20px;
+}
+
+.percbar {
+    width: 100%;
+    height: 5px;
+    background: #C7CCD2;
+    margin: 20px 0;
+}
+
+.progbar {
+    height: 100%;
+    background: #10C9C3;
+}
+
+#skillsimg {
+    width: 50%;
+    float: right;
+}
+
+#nums {
+    background: #10C9C3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+
+.nums-item {
+    color: white;
+    flex-grow: 1;
+    margin: 20px;
+}
+
+.nums-item > img {
+    float: left;
+    height: 80px;
+    margin: 20px;
+}
+
+#photo-panel {
+    background: #E9E9E9;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    cursor: pointer;
+}
+
+#photo-panel > p {
+    width: 100%;
+    text-align: center;
+    color: #8e8e8e;
+    line-height: 80px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.photos {
+    width: 25%;
+    height: 400px;
+    background: blue;
+}
+
+.photos-hover {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: url("asets/eye.svg") no-repeat center rgba(14,14,14,0.6);
+    transition: 0.4s;
+}
+
+.photos-hover:hover {
+
+    opacity: 1;
+}
+
+.photos:nth-of-type(1) {
+    background: url("asets/1.png");
+    background-size: cover;
+}
+
+.photos:nth-of-type(2) {
+    background: url("asets/2.png");
+    background-size: cover;
+}
+
+.photos:nth-of-type(3) {
+    background: url("asets/3.png");
+    background-size: cover;
+}
+
+.photos:nth-of-type(4) {
+    background: url("asets/4.png");
+    background-size: cover;
+}
+
+.photos:nth-of-type(5) {
+    background: url("asets/5.png");
+    background-size: cover;
+}
+
+.photos:nth-of-type(6) {
+    background: url("asets/6.png");
+    background-size: cover;
+}
+
+.photos:nth-of-type(7) {
+    background: url("asets/7.png");
+    background-size: cover;
+}
+
+.photos:nth-of-type(8) {
+    background: url("asets/8.png");
+    background-size: cover;
+}
+
+#work-process {
+    width: calc(100% - 200px);
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+
+#video-cont {
+    position: relative;
+}
+
+video {
+    width: calc(100% - 200px);
+    margin: 100px 0;
+}
+
+#play-btn {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    cursor: pointer;
+}
+
+#shadow, #rama, #play-butt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-user-drag: none;
+}
+
+#play-butt {
+    left: 38px;
+    top: 35px;
+}
+
+#services {
+    background: #E9E9E9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.services-item {
+    width: calc(25% - 50px);
+    text-align: center;
+}
+
+.services-item > img {
+    width: 50px;
+    display: block;
+    margin: 50px auto 20px auto;
+}
+
+#testi {
+    background: #10C9C3;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#testi>h2 {
+    width: 40%;
+    margin: 120px 0 0 0;
+}
+
+#testi>h2>span {
+    line-height: 80px;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+#testi ul {
+    width: 102px;
+    margin: 20px 0;
+    padding: 0;
+}
+
+#testi ul li {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    float: left;
+    margin-left: 10px;
+    list-style-type: none;
+    background: lightgray;
+    cursor: pointer;
+}
+
+#testi ul li.active {
+    background: white;
+    margin-top: -2px;
+    width: 16px;
+    height: 16px;
+
+}
+
+.smartext {
+    display: none;
+}
+
+.smartext:nth-of-type(2) {
+    display: block;
+}
+
+#brands {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.brands-item {
+    margin: 100px;
+}
+
+#contact {
+    background: #F5F5F5;
+    text-align: center;
+    padding: 100px;
+}
+
+#contact>p {
+    width: calc(40% + 50px);
+    margin: auto;
+}
+
+input {
+    border: 0;
+    height: 30px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#name, #email {
+    width: 20%;
+    margin: 20px;
+}
+
+#title {
+    width: calc(40% + 65px);
+    margin: 10px;
+}
+
+#comment {
+    width: calc(40% + 65px);
+    height: 200px;
+    resize: none;
+    margin: 20px;
+    border: 0;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#submit {
+    background: #10C9C3;
+    border: 0;
+    color: white;
+    padding: 20px 40px;
+    cursor: pointer;
+}
+
+footer {
+    min-height: 285px;
+    background: #141414;
+}
+
+.footer-text {
+    color: grey;
+    margin-top: 100px;
+}
+
+.footer-text > b {
+    color: white;
+}
+
+.footer-text:nth-of-type(1), .footer-text:nth-of-type(2) {
+    flex-grow: 4;
+}
+
+.footer-text:nth-of-type(3), .footer-text:nth-of-type(4), .footer-text:nth-of-type(5) {
+    flex-grow: 2;
+}
+
+.footer-text>a {
+    color: grey;
+    text-decoration: none;
+    display: block;
+}
+
+.footer-text>a::after {
+    content: '';
+    width: 0px;
+    height: 1px;
+    display: block;
+    background: grey;
+    transition: 0.3s;
+}
+
+.footer-text>a:hover::after {
+    width: 40%;
+}
+
+@media (max-width: 1200px) {
+
+    nav {
+        float: right;
+        margin: 40px 20px 40px 20px;
+    }
+
+    .navbutt {
+        margin: 0 10px;
+    }
+
+    #nums {
+        padding: 50px;
+    }
+
+    .photos {
+        height: 250px;
+    }
+
+    .brands-item {
+        margin: 80px;
+    }
+
+    video {
+        width: calc(100% - 100px);
+    }
+
+    .services-item {
+        width: calc(50% - 25px);
+    }
+
+    #contact {
+        padding: 100px 0;
+    }
+}
+
+@media (max-width: 800px) {
+
+    #burger {
+        display: block;
+        float: right;
+        margin: 40px 50px;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        background: #E6E7EB;
+        text-align: center;
+    }
+
+    .navbutt {
+        display: block;
+        font-size: 22px;
+        margin: 50px;
+    }
+
+    #about {
+        padding: 50px;
+    }
+
+    #skillscont {
+        width: 100%;
+        padding: 10%;
+    }
+
+    #banncont {
+        width: 60%;
+    }
+
+    #skillsimg {
+        display: none;
+    }
+
+    .photos {
+        width: 50%;
+    }
+
+    #work-process {
+        width: 80%;
+        padding: 0;
+    }
+
+    video {
+        width: 100%;
+    }
+
+    #testi>h2 {
+        width: 80%;
+    }
+
+    .brands-item {
+        margin: 50px;
+    }
+
+    #contact > p {
+        width: 80%;
+    }
+
+    #name, #email {
+        width: 40%;
+    }
+
+    #title {
+        width: 88%;
+    }
+
+    #comment {
+        width: 88%;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    #about>img {
+        width: 160px;
+    }
+
+    #nums>.container {
+        margin: 0 30%;
+    }
+
+    #contact {
+        padding: 100px 30px;
+    }
+
+    #name, #email {
+        width: 88%;
+        margin: 10px;
+    }
+
+    #comment {
+        margin: 10px;
+    }
+}
